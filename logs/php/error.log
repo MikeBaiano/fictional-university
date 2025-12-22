@@ -1,1 +1,121 @@
 [18-Dec-2025 15:02:29 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\index.php on line 6
+[19-Dec-2025 15:02:52 UTC] PHP Parse error:  Unclosed '{' on line 5 in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\page.php on line 54
+[19-Dec-2025 15:09:59 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\page.php on line 28
+[19-Dec-2025 16:19:10 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 95
+[19-Dec-2025 16:19:10 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, string given in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php:102
+Stack trace:
+#0 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php(102): array_merge(Array, 'headerMenuLocat...')
+#1 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php(14): register_nav_menus('headerMenuLocat...', 'Header Menu Loc...')
+#2 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(341): university_features('')
+#3 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#4 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#5 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-settings.php(720): do_action('after_setup_the...')
+#6 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-config.php(103): require_once('C:\\Users\\mikeq\\...')
+#7 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-load.php(50): require_once('C:\\Users\\mikeq\\...')
+#8 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\mikeq\\...')
+#9 {main}
+  thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 102
+[19-Dec-2025 16:19:12 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 95
+[19-Dec-2025 16:19:12 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, string given in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php:102
+Stack trace:
+#0 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php(102): array_merge(Array, 'headerMenuLocat...')
+#1 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php(14): register_nav_menus('headerMenuLocat...', 'Header Menu Loc...')
+#2 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(341): university_features('')
+#3 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#4 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#5 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-settings.php(720): do_action('after_setup_the...')
+#6 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-config.php(103): require_once('C:\\Users\\mikeq\\...')
+#7 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-load.php(50): require_once('C:\\Users\\mikeq\\...')
+#8 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\mikeq\\...')
+#9 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-admin\themes.php(10): require_once('C:\\Users\\mikeq\\...')
+#10 {main}
+  thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 102
+[19-Dec-2025 16:19:14 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 95
+[19-Dec-2025 16:19:14 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, string given in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php:102
+Stack trace:
+#0 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php(102): array_merge(Array, 'headerMenuLocat...')
+#1 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php(14): register_nav_menus('headerMenuLocat...', 'Header Menu Loc...')
+#2 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(341): university_features('')
+#3 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#4 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#5 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-settings.php(720): do_action('after_setup_the...')
+#6 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-config.php(103): require_once('C:\\Users\\mikeq\\...')
+#7 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-load.php(50): require_once('C:\\Users\\mikeq\\...')
+#8 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\mikeq\\...')
+#9 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-admin\index.php(10): require_once('C:\\Users\\mikeq\\...')
+#10 {main}
+  thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 102
+[19-Dec-2025 16:19:16 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 95
+[19-Dec-2025 16:19:16 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, string given in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php:102
+Stack trace:
+#0 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php(102): array_merge(Array, 'headerMenuLocat...')
+#1 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php(14): register_nav_menus('headerMenuLocat...', 'Header Menu Loc...')
+#2 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(341): university_features('')
+#3 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#4 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#5 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-settings.php(720): do_action('after_setup_the...')
+#6 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-config.php(103): require_once('C:\\Users\\mikeq\\...')
+#7 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-load.php(50): require_once('C:\\Users\\mikeq\\...')
+#8 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-blog-header.php(13): require_once('C:\\Users\\mikeq\\...')
+#9 C:\Users\mikeq\Local Sites\fictional-university\app\public\index.php(17): require('C:\\Users\\mikeq\\...')
+#10 {main}
+  thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 102
+[19-Dec-2025 16:19:23 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 95
+[19-Dec-2025 16:19:23 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, string given in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php:102
+Stack trace:
+#0 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php(102): array_merge(Array, 'headerMenuLocat...')
+#1 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php(14): register_nav_menus('headerMenuLocat...', 'Header Menu Loc...')
+#2 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(341): university_features('')
+#3 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#4 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#5 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-settings.php(720): do_action('after_setup_the...')
+#6 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-config.php(103): require_once('C:\\Users\\mikeq\\...')
+#7 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-load.php(50): require_once('C:\\Users\\mikeq\\...')
+#8 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\mikeq\\...')
+#9 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-admin\index.php(10): require_once('C:\\Users\\mikeq\\...')
+#10 {main}
+  thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 102
+[19-Dec-2025 16:20:44 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 95
+[19-Dec-2025 16:20:44 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, string given in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php:102
+Stack trace:
+#0 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php(102): array_merge(Array, 'headerMenuLocat...')
+#1 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php(14): register_nav_menus('headerMenuLocat...', 'Header Menu Loc...')
+#2 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(341): university_features('')
+#3 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#4 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#5 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-settings.php(720): do_action('after_setup_the...')
+#6 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-config.php(103): require_once('C:\\Users\\mikeq\\...')
+#7 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-load.php(50): require_once('C:\\Users\\mikeq\\...')
+#8 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-admin\admin.php(35): require_once('C:\\Users\\mikeq\\...')
+#9 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-admin\index.php(10): require_once('C:\\Users\\mikeq\\...')
+#10 {main}
+  thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 102
+[19-Dec-2025 16:20:44 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 95
+[19-Dec-2025 16:20:44 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, string given in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php:102
+Stack trace:
+#0 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php(102): array_merge(Array, 'headerMenuLocat...')
+#1 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php(14): register_nav_menus('headerMenuLocat...', 'Header Menu Loc...')
+#2 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(341): university_features('')
+#3 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#4 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#5 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-settings.php(720): do_action('after_setup_the...')
+#6 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-config.php(103): require_once('C:\\Users\\mikeq\\...')
+#7 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-load.php(50): require_once('C:\\Users\\mikeq\\...')
+#8 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-blog-header.php(13): require_once('C:\\Users\\mikeq\\...')
+#9 C:\Users\mikeq\Local Sites\fictional-university\app\public\index.php(17): require('C:\\Users\\mikeq\\...')
+#10 {main}
+  thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 102
+[19-Dec-2025 19:33:54 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "get" in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\index.php:4
+Stack trace:
+#0 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\template-loader.php(125): include()
+#1 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-blog-header.php(19): require_once('C:\\Users\\mikeq\\...')
+#2 C:\Users\mikeq\Local Sites\fictional-university\app\public\index.php(17): require('C:\\Users\\mikeq\\...')
+#3 {main}
+  thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\index.php on line 4
+[19-Dec-2025 19:34:30 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "get" in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\index.php:4
+Stack trace:
+#0 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\template-loader.php(125): include()
+#1 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-blog-header.php(19): require_once('C:\\Users\\mikeq\\...')
+#2 C:\Users\mikeq\Local Sites\fictional-university\app\public\index.php(17): require('C:\\Users\\mikeq\\...')
+#3 {main}
+  thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\index.php on line 4

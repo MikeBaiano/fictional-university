@@ -11,10 +11,23 @@ function university_files() {
 add_action( 'wp_enqueue_scripts', 'university_files' );
 
 function university_features() {
+    register_nav_menu('headerMenuLocation', 'Header Menu Location' );
+    register_nav_menu('footerLocationOne', 'Footer Location One' );
+    register_nav_menu('footerLocationTwo', 'Footer Location Two' );
     add_theme_support( 'title-tag' );
 }
 
 add_action( 'after_setup_theme', 'university_features' );
 
+// Fix Gutenberg REST API issues
+add_filter( 'rest_authentication_errors', function( $result ) {
+    if ( ! empty( $result ) ) {
+        return $result;
+    }
+    if ( ! is_user_logged_in() ) {
+        return new WP_Error( 'rest_not_logged_in', 'You are not currently logged in.', array( 'status' => 401 ) );
+    }
+    return $result;
+});
 
 ?>
