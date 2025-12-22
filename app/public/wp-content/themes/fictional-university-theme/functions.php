@@ -19,6 +19,8 @@ function university_features() {
 
 add_action( 'after_setup_theme', 'university_features' );
 
+
+
 // Fix Gutenberg REST API issues
 add_filter( 'rest_authentication_errors', function( $result ) {
     if ( ! empty( $result ) ) {
