@@ -127,3 +127,20 @@ Stack trace:
 #3 C:\Users\mikeq\Local Sites\fictional-university\app\public\index.php(17): require('C:\\Users\\mikeq\\...')
 #4 {main}
   thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\link-template.php on line 1302
+[05-Jan-2026 15:02:43 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function WP_Query::set(), 0 passed in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php on line 24 and exactly 2 expected in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-query.php:1878
+Stack trace:
+#0 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php(24): WP_Query->set()
+#1 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(341): university_adjust_queries(Object(WP_Query))
+#2 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#3 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\plugin.php(570): WP_Hook->do_action(Array)
+#4 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-query.php(1910): do_action_ref_array('pre_get_posts', Array)
+#5 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-query.php(3958): WP_Query->get_posts()
+#6 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp.php(704): WP_Query->query(Array)
+#7 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp.php(824): WP->query_posts()
+#8 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\functions.php(1343): WP->main('')
+#9 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-blog-header.php(16): wp()
+#10 C:\Users\mikeq\Local Sites\fictional-university\app\public\index.php(17): require('C:\\Users\\mikeq\\...')
+#11 {main}
+  thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-query.php on line 1878
+[05-Jan-2026 15:40:40 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\header.php on line 29
+[05-Jan-2026 15:41:14 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\header.php on line 29
