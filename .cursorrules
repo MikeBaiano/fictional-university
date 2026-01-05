@@ -1,0 +1,19 @@
+# General Behavior
+- Always respond in Portuguese (Pt-BR) unless declared otherwise.
+- Be concise and focus on the solution.
+- If modifying an existing file, try to match the existing coding style.
+
+# WordPress Development
+- Follow WordPress PHP Coding Standards.
+- Use standard WordPress functions over raw PHP (e.g., `wp_safe_redirect` instead of `header()`).
+- Always escape outputs (`esc_html`, `esc_attr`, `esc_url`) and sanitize inputs (`sanitize_text_field`).
+- Handle errors gracefully.
+- When working with queries, prefer `WP_Query` for custom loops.
+
+# Security
+- Ensure nonces are verified for form submissions.
+- Restrict direct access to PHP files if necessary (`defined('ABSPATH') or die();`).
+
+# PHP
+- Use strict types (`declare(strict_types=1);`) for new classes/files if consistent with the project.
+- Write meaningful comments for complex logic.
