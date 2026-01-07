@@ -1,9 +1,13 @@
+@use "sass:color";
+@use "../base/variables";
+@use "../base/mixins";
+
 .page-links {
   position: relative;
   z-index: 1;
-  background-color: $beige;
+  background-color: variables.$beige;
   margin: 0 0 40px 0;
-  @include atSmallMedium {
+  @include mixins.atSmallMedium {
     margin: 0 0 40px 20px;
     width: 300px;
     float: right;
@@ -14,18 +18,18 @@
     font-weight: normal;
     text-align: center;
     padding: 20px 0;
-    background-color: $mainBlue;
+    background-color: variables.$mainBlue;
     color: #fff;
 
     a {
       color: #fff;
       text-decoration: none;
-      background-color: $mainBlue;
+      background-color: variables.$mainBlue;
     }
   }
 
   li {
-    border-top: 1px solid adjust-color($beige, $lightness: -14%);
+    border-top: 1px solid color.adjust(variables.$beige, $lightness: -14%);
   }
 
   li:first-child {
@@ -35,8 +39,8 @@
   &__active,
   & .current_page_item {
     text-align: center;
-    background-color: scale-color($beige, $lightness: -7%, $saturation: -10%);
-    color: $mainBlue;
+    background-color: color.scale(variables.$beige, $lightness: -7%, $saturation: -10%);
+    color: variables.$mainBlue;
     font-weight: bold;
   }
 
@@ -45,12 +49,12 @@
     text-align: center;
     padding: 17px 10px;
     text-decoration: none;
-    color: $mainBlue;
+    color: variables.$mainBlue;
     transition: all 0.3s;
   }
 
   li a:hover {
-    color: adjust-color($mainBlue, $lightness: -6%);
-    background-color: scale-color($beige, $lightness: -9%, $saturation: -12%);
+    color: color.adjust(variables.$mainBlue, $lightness: -6%);
+    background-color: color.scale(variables.$beige, $lightness: -9%, $saturation: -12%);
   }
 }
