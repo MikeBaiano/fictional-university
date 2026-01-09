@@ -1,0 +1,9 @@
+# Dependências do Node (pasta que fica gigante)
+node_modules/
+
+# Arquivos de build (gerados automaticamente)
+build/
+dist/
+
+# Logs de erro
+*.log
