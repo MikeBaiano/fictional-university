@@ -198,3 +198,21 @@ Stack trace:
 #4 {main}
   thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php on line 11
 [07-Jan-2026 14:16:55 UTC] PHP Warning:  Undefined array key "size" in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\plugins\manual-image-crop\lib\ManualImageCropEditorWindow.php on line 79
+[12-Jan-2026 14:30:09 UTC] PHP Fatal error:  Uncaught Error: Cannot unset string offsets in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\plugins\advanced-custom-fields\includes\fields\class-acf-field-google-map.php:89
+Stack trace:
+#0 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(339): acf_field_google_map->input_admin_enqueue_scripts()
+#1 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#3 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\plugins\advanced-custom-fields\includes\assets.php(394): do_action('acf/input/admin...')
+#4 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(341): ACF_Assets->enqueue_scripts('post.php')
+#5 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#7 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-admin\admin-header.php(123): do_action('admin_enqueue_s...', 'post.php')
+#8 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-admin\edit-form-blocks.php(376): require_once('C:\\Users\\mikeq\\...')
+#9 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-admin\post.php(187): require('C:\\Users\\mikeq\\...')
+#10 {main}
+  thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\plugins\advanced-custom-fields\includes\fields\class-acf-field-google-map.php on line 89
+[12-Jan-2026 14:46:30 UTC] PHP Warning:  Array to string conversion in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\archive-campus.php on line 20
+[12-Jan-2026 14:46:30 UTC] PHP Warning:  Array to string conversion in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\archive-campus.php on line 20
+[12-Jan-2026 14:53:48 UTC] PHP Warning:  Array to string conversion in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\archive-campus.php on line 20
+[12-Jan-2026 14:53:48 UTC] PHP Warning:  Array to string conversion in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\archive-campus.php on line 20
