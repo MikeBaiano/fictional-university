@@ -216,3 +216,10 @@ Stack trace:
 [12-Jan-2026 14:46:30 UTC] PHP Warning:  Array to string conversion in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\archive-campus.php on line 20
 [12-Jan-2026 14:53:48 UTC] PHP Warning:  Array to string conversion in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\archive-campus.php on line 20
 [12-Jan-2026 14:53:48 UTC] PHP Warning:  Array to string conversion in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\archive-campus.php on line 20
+[12-Jan-2026 16:42:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on array in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\single-program.php:95
+Stack trace:
+#0 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\template-loader.php(125): include()
+#1 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-blog-header.php(19): require_once('C:\\Users\\mikeq\\...')
+#2 C:\Users\mikeq\Local Sites\fictional-university\app\public\index.php(17): require('C:\\Users\\mikeq\\...')
+#3 {main}
+  thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\single-program.php on line 95
