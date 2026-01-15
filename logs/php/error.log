@@ -344,3 +344,40 @@ Stack trace:
 #4 C:\Users\mikeq\Local Sites\fictional-university\app\public\index.php(17): require('C:\\Users\\mikeq\\...')
 #5 {main}
   thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php on line 3
+[15-Jan-2026 14:47:53 UTC] PHP Warning:  Undefined array key "size" in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\plugins\manual-image-crop\lib\ManualImageCropEditorWindow.php on line 79
+[15-Jan-2026 15:41:58 UTC] PHP Warning:  Undefined variable $eventDate in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\inc\search-route.php on line 94
+[15-Jan-2026 15:41:58 UTC] PHP Warning:  Undefined variable $eventDate in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\inc\search-route.php on line 95
+[15-Jan-2026 15:41:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function format() on null in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\inc\search-route.php:95
+Stack trace:
+#0 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\rest-api\class-wp-rest-server.php(1292): universitySearchResults(Object(WP_REST_Request))
+#1 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\rest-api\class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/university/v1/...', Array, NULL)
+#2 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\rest-api.php(467): WP_REST_Server->serve_request('/university/v1/...')
+#4 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#5 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#6 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\plugin.php(570): WP_Hook->do_action(Array)
+#7 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#8 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp.php(821): WP->parse_request('')
+#9 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\functions.php(1343): WP->main('')
+#10 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-blog-header.php(16): wp()
+#11 C:\Users\mikeq\Local Sites\fictional-university\app\public\index.php(17): require('C:\\Users\\mikeq\\...')
+#12 {main}
+  thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\inc\search-route.php on line 95
+[15-Jan-2026 15:42:12 UTC] PHP Warning:  Undefined variable $eventDate in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\inc\search-route.php on line 94
+[15-Jan-2026 15:42:12 UTC] PHP Warning:  Undefined variable $eventDate in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\inc\search-route.php on line 95
+[15-Jan-2026 15:42:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function format() on null in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\inc\search-route.php:95
+Stack trace:
+#0 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\rest-api\class-wp-rest-server.php(1292): universitySearchResults(Object(WP_REST_Request))
+#1 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\rest-api\class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/university/v1/...', Array, NULL)
+#2 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\rest-api.php(467): WP_REST_Server->serve_request('/university/v1/...')
+#4 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#5 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#6 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\plugin.php(570): WP_Hook->do_action(Array)
+#7 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#8 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\class-wp.php(821): WP->parse_request('')
+#9 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-includes\functions.php(1343): WP->main('')
+#10 C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-blog-header.php(16): wp()
+#11 C:\Users\mikeq\Local Sites\fictional-university\app\public\index.php(17): require('C:\\Users\\mikeq\\...')
+#12 {main}
+  thrown in C:\Users\mikeq\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\inc\search-route.php on line 95
