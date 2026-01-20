@@ -17,7 +17,7 @@ pageBanner(array(
 
       while ( have_posts() ) {
         the_post(); ?>
-        <?php get_template_part('template-parts/event'); ?>
+        <?php get_template_part('template-parts/content', 'event'); ?>
         
 
       <?php }
