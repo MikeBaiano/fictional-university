@@ -7,3 +7,7 @@ dist/
 
 # Logs de erro
 *.log
+
+# Arquivo de configuração com chaves de API (NÃO comitar!)
+config.php
+*.local.php
