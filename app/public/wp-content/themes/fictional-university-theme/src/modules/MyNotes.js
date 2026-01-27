@@ -90,6 +90,9 @@ class MyNotes {
             success: (response) => {
                 console.log('note updated');
                 console.log(response)
+                // Update the original values with the new saved values
+                thisNote.data('original-title', thisNote.find('.note-title-field').val());
+                thisNote.data('original-body', thisNote.find('.note-body-field').val());
                 this.makeNoteReadonly(thisNote);
             },
             error: (response) => {
