@@ -4173,6 +4173,7 @@ class MyNotes {
         console.log('note deleted');
         console.log(response);
         thisNote.slideUp();
+        this.updateNoteCount('delete');
       },
       error: response => {
         console.log('note not deleted');
@@ -4235,12 +4236,28 @@ class MyNotes {
                 `).prependTo('#my-notes').hide().slideDown();
         console.log('note created');
         console.log(response);
+        this.updateNoteCount('create');
       },
       error: response => {
         console.log('note not created');
         console.log(response);
+
+        // Check if the error is due to note limit
+        if (response.responseText && response.responseText.includes('limit')) {
+          jquery__WEBPACK_IMPORTED_MODULE_0___default()('#note-limit-message').text('Note Limit Reached! Delete a note to make room.').fadeIn();
+
+          // Hide the message after 3 seconds
+          setTimeout(() => {
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()('#note-limit-message').fadeOut();
+          }, 3000);
+        }
       }
     });
+  }
+  updateNoteCount(action) {
+    var currentCount = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()('#note-limit-display').text());
+    var newCount = action === 'delete' ? currentCount + 1 : currentCount - 1;
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#note-limit-display').text(newCount);
   }
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyNotes);

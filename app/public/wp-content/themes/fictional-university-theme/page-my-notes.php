@@ -20,6 +20,8 @@ while ( have_posts() ) {
         <input class="new-note-title" type="text" placeholder="Title">
         <textarea class="new-note-body" placeholder="Your note here..."></textarea>
         <button class="submit-note btn btn--blue btn--small"> Create Note</button>
+        <span class="note-limit">You have <span id="note-limit-display"><?php echo 5 - count_user_posts(get_current_user_ID(), 'note'); ?></span> notes remaining.</span>
+        <span id="note-limit-message" style="display: none; color: red; font-weight: bold; margin-top: 10px; display: block;"></span>
       </div>
       <ul class="link-list min-list" id="my-notes">
         <?php 
