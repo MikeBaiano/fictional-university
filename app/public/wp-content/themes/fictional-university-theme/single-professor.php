@@ -24,6 +24,16 @@ while ( have_posts() ) {
                   )
                 )
               )); 
+              $existQuery =  new WP_Query(array(
+                'post_type' => 'like',
+                'meta_query' => array(
+                  array(
+                    'key' => 'liked_professor_id',
+                    'compare' => '=',
+                    'value' => get_the_ID()
+                  )
+                )
+              )); 
               
               
               ?>
