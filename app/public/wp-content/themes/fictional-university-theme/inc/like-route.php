@@ -15,14 +15,19 @@ function universityLikeRoutes() {
 }
 
 function createLike($data) {
-    wp_insert_post(array(
-        'post_type' => 'like',
-        'post_title' => '2nd PHP Test',
-        'post_status' => 'publish',
-        'meta_input' => array(
-            'liked_professor_id' => $data['postID']
+    if (is_user_logged_in()) {
+        $professor_id = sanitize_text_field($data['professorID']);
+        return wp_insert_post(array(
+            'post_type' => 'like',
+            'post_status' => 'publish',
+            'post_title' => 'LIKE',
+            'meta_input' => array(
+            'liked_professor_id' => $professor_id,
         )
     ));
+    } else {
+        die('You must be logged in to like a professor');
+    }
 }
 
 function deleteLike($data) {
