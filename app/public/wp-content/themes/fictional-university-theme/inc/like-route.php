@@ -17,19 +17,41 @@ function universityLikeRoutes() {
 function createLike($data) {
     if (is_user_logged_in()) {
         $professor_id = sanitize_text_field($data['professorID']);
-        return wp_insert_post(array(
+
+        $existQuery =  new WP_Query(array(
+                  'author' => get_current_user_id(),
+                  'post_type' => 'like',
+                  'meta_query' => array(
+                    array(
+                      'key' => 'liked_professor_id',
+                      'compare' => '=',
+                      'value' => $professor_id
+                    )
+                  )
+                )); 
+
+        if ($existQuery->found_posts == 0 && get_post_type($professor_id) == 'professor') {
+            return wp_insert_post(array(
             'post_type' => 'like',
             'post_status' => 'publish',
             'post_title' => 'LIKE',
             'meta_input' => array(
-            'liked_professor_id' => $professor_id,
-        )
-    ));
+            'liked_professor_id' => $professor_id)
+        ));
+        } else {
+            die("Invalid professor ID");
+        }
     } else {
         die('You must be logged in to like a professor');
     }
 }
 
 function deleteLike($data) {
-    return 'Thanks for the unlike';
+    $likeID = sanitize_text_field($data['like']);
+    if (get_current_user_id() == get_post_field('post_author', $likeID) || get_post_type($likeID) == 'like') {
+        wp_delete_post($likeID, true);
+        return 'Thanks for the unlike';
+    } else {
+        die('You do not have permission to delete this like');
+    }
 }
